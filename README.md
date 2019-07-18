@@ -13,3 +13,11 @@ so this should work for both FireFox and Chrome (and probably others too)
 * Navigate to [about:debugging](about:debugging)
 * Click `Load Temporary Add-on`
 * Select the manifest.json from the cloned repo
+
+### Chrome
+
+* Clone this repo to your machine
+* Navigate to [chrome://extensions/](chrome://extensions/)
+* Enable Developer Mode
+* Click `Load Unpacked"
+* Select the cloned repo
