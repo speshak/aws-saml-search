@@ -31,7 +31,9 @@ function parseAccounts() {
 
 function accountSearch(qry, callback) {
   var accounts = parseAccounts();
-  accounts = accounts.filter(account => account.text.toLowerCase().includes(qry));
+  if(qry != "") {
+    accounts = accounts.filter(account => account.text.toLowerCase().includes(qry));
+  }
   callback(accounts);
 }
 
@@ -39,17 +41,10 @@ function accountSearch(qry, callback) {
 function decoratePage() {
   $('head').append('<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">');
 
-  var searchBox = document.createElement("input");
-  searchBox.type = "text";
-  searchBox.id = "account-search";
-  searchBox.classList.add('form-control')
-  searchBox.classList.add('basicAutoComplete')
-  searchBox.autocomplete = "off";
-
-  document.getElementById('saml_form').style.display = 'none';
-  document.getElementById('content').appendChild(searchBox);
+  $('#content').prepend('<input type="text" id="account-search" class="form-control basicAutoComplete" autocomplete="off" style="width: 50%; margin-left: auto; margin-right: auto;" placeholder="Search for role..."><br/><br/>');
 
   $('#account-search').autoComplete({
+    minLength: 2,
     resolver: 'custom',
     events: {
         search: accountSearch
@@ -64,6 +59,8 @@ function decoratePage() {
     // Submit the form
     $('#saml_form').submit();
   });
+
+  $('#account-search').focus();
 }
 
 
