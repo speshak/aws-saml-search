@@ -1,6 +1,8 @@
 {
   "manifest_version": 2,
   "name": "aws-saml-declutter",
+  "author": "Scott Peshak",
+  "homepage_url": "https://github.com/speshak/aws-saml-declutter",
   "version": "1.2",
 
   "content_scripts": [
