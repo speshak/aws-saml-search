@@ -3,7 +3,7 @@
   "name": "aws-saml-search",
   "author": "Scott Peshak",
   "homepage_url": "https://github.com/speshak/aws-saml-search",
-  "version": "1.3",
+  "version": "1.4",
 
   "content_scripts": [
     {
