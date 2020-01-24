@@ -1,4 +1,4 @@
-# aws-saml-declutter
+# aws-saml-search
 
 Allows auto-complete searching of accounts/roles on the AWS SAML login form.
 
