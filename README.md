@@ -7,14 +7,20 @@ so this should work for both FireFox and Chrome (and probably others too)
 
 ## Installing
 
-### FireFox
+* [FireFox](https://addons.mozilla.org/en-US/firefox/addon/aws-saml-search/)
+* Chrome _pending Google approval, for now use the development instructions_
+
+
+### Development
+
+#### FireFox
 
 * Clone this repo to your machine
 * Navigate to [about:debugging](about:debugging)
 * Click `Load Temporary Add-on`
 * Select the manifest.json from the cloned repo
 
-### Chrome
+#### Chrome
 
 * Clone this repo to your machine
 * Navigate to [chrome://extensions/](chrome://extensions/)
