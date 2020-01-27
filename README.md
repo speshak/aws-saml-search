@@ -8,7 +8,7 @@ so this should work for both FireFox and Chrome (and probably others too)
 ## Installing
 
 * [FireFox](https://addons.mozilla.org/en-US/firefox/addon/aws-saml-search/)
-* Chrome _pending Google approval, for now use the development instructions_
+* [Chrome](https://chrome.google.com/webstore/detail/aws-saml-search/dgnkjmeflgibefhijajhbkcjepbpnlgp)
 
 
 ### Development
