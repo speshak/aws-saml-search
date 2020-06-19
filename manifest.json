@@ -14,6 +14,9 @@
         "bootstrap.min.js",
         "bootstrap-autocomplete.min.js",
         "account-search.js"
+      ],
+      "css": [
+        "bootstrap.min.css"
       ]
     }
   ],

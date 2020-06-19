@@ -39,8 +39,6 @@ function accountSearch(qry, callback) {
 
 
 function decoratePage() {
-  $('head').append('<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">');
-
   $('#saml_form').prepend('<br><p style="font-size: 16px; padding-left: 20px;">Search for a role:</p><div class="saml-account"><input type="text" id="account-search" class="form-control basicAutoComplete" autocomplete="off" placeholder="Type account alias, id, or role..."></div>');
 
   $('#account-search').autoComplete({
