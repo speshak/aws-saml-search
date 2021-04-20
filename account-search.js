@@ -11,12 +11,16 @@ function parseAccounts() {
     var accountReg = /(\d{12})/;
     var accountNum = accountName.match(accountReg)[1];
 
+    var partitionReg = /(arn:)([^:]+)/;
+    var accountArn = account.querySelector(".saml-radio").value;
+    var accountPartition = accountArn.match(partitionReg)[2];
+    
     // Find the roles
     var roles = account.querySelectorAll(".saml-role");
     for(var j = 0; j < roles.length; j++) {
       var roleName = roles.item(j).textContent.trim();
       accountRoles.push({
-        "id": `arn:aws:iam::${accountNum}:role/${roleName}`,
+        "id": `arn:${accountPartition}:iam::${accountNum}:role/${roleName}`,
         "text": `${accountName} - ${roleName}`,
         "accountNum": accountNum,
         "roleName": roleName,
