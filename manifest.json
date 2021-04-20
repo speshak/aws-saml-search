@@ -7,7 +7,10 @@
 
   "content_scripts": [
     {
-      "matches": ["https://signin.aws.amazon.com/saml"],
+      "matches": [
+        "https://signin.aws.amazon.com/saml",
+        "https://signin.amazonaws-us-gov.com/saml"
+      ],
       "js": [
         "jquery-3.4.1.slim.min.js",
         "popper.min.js",
